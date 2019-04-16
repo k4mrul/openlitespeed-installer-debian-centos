@@ -2,6 +2,8 @@
 
 # Setting a log file
 LOG="./openlitespeed-installation-log.txt"
+
+# Get the server IP address
 SERVER_IP=$(hostname -I | awk '{print $1}')
 
 function isRoot () {
