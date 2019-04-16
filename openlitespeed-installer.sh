@@ -2,6 +2,7 @@
 
 # Setting a log file
 LOG="./openlitespeed-installation-log.txt"
+SERVER_IP=$(hostname -I | awk '{print $1}')
 
 function isRoot () {
 	if [ "$EUID" -ne 0 ]; then
@@ -181,5 +182,5 @@ echo ""
 
 echo -e "\n\n=================>Openlitespeed has been successfully installed<=========================="
 echo ""
-echo "Open web browser and browse http://SERVER_IP:7080/ and enter admin:123456 as login (don't forget to change the credentials from 'Webadmin Settings').\n"
+echo "Open web browser and browse http://$SERVER_IP:7080/ and enter admin:123456 as login (don't forget to change the credentials from 'Webadmin Settings').\n"
 echo -e "\n\nThank you for using this script :) \n\n"
