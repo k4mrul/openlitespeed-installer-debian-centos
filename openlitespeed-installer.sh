@@ -184,5 +184,5 @@ echo ""
 
 echo -e "\n\n=================>Openlitespeed has been successfully installed<=========================="
 echo ""
-echo "Open web browser and browse http://$SERVER_IP:7080/ and enter admin:123456 as login (don't forget to change the credentials from 'Webadmin Settings').\n"
+echo "Open web browser and browse http://$SERVER_IP:7080/ and enter admin:123456 as login (don't forget to change the credentials from 'Webadmin Settings')."
 echo -e "\n\nThank you for using this script :) \n\n"
