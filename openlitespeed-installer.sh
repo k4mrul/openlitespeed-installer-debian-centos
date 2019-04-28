@@ -148,7 +148,7 @@ echo "==================Updating system==========================="
 sleep 1
 echo ""
 
-echo "==================Installing openlitespeed with PHP 7.3==========================="
+echo "==================Installing OpenLiteSpeed with PHP 7.3 and required dependencies==========================="
 {
     installOpenLiteSpeedAndPHP
 } &>> $LOG
@@ -169,7 +169,7 @@ echo "==================Tweaking PHP==========================="
 sleep 1
 echo ""
 
-echo "==================Install MariaDB 10.3==========================="
+echo "==================Installing MariaDB 10.3==========================="
 {
     installMariadb
 } &>> $LOG
@@ -182,7 +182,7 @@ mysql_secure_installation
 sleep 1
 echo ""
 
-echo -e "\n\n=================>Openlitespeed has been successfully installed<=========================="
+echo -e "\n\n=================>OpenLiteSpeed has been successfully installed<=========================="
 echo ""
 echo "Open web browser and browse http://$SERVER_IP:7080/ and enter admin:123456 as login (don't forget to change the credentials from 'Webadmin Settings')."
 echo -e "\n\nThank you for using this script :) \n\n"
