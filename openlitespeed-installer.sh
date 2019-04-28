@@ -27,7 +27,7 @@ function checkOS () {
         COMMAND="yum"
 	elif [[ -e /etc/centos-release ]]; then
         if ! grep -qs "^CentOS Linux release 7" /etc/centos-release; then
-                echo "The script only support CentOS 7. You version of CentOS is not 7"
+                echo "This script only supports CentOS 7. You version of CentOS is not 7"
                 exit 1
         fi
 		OS=centos
